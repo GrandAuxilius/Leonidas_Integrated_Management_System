@@ -20,9 +20,9 @@ Route::get('/', function () {
 use App\Http\Controllers\BranchController;
 Route::get('/branch',[BranchController:: class,'showBranches']);
 
-use App\Http\Controllers\SignInController;
-Route::get('/sign_in',[SignInController:: class,'showsignIn']);
-
 use App\Http\Controllers\staffUsersController;
-
 Route::get('/staffUsers', [staffUsersController::class, 'showstaffUsers']);
+
+use App\Http\Controllers\MenuListController;
+Route::get('/menuList', [MenuListController::class, 'showMenuList']);
+
